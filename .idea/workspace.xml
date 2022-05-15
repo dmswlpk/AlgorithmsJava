@@ -18,6 +18,10 @@
       <change afterPath="$PROJECT_DIR$/../JavaForBeginners/out/production/Lesson1/HomeworkBeginners/HomeWork10.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaForBeginners/src/HomeworkBeginners/HomeWork10.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaForBeginners/src/HomeworkBeginners/from1to7/StringLeasson10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestCheckTheTitleSubmitNewLanguage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestTheTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/TestCheckTheTitleSubmitNewLanguage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/TestTheTitle.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjectSelenium/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjectSelenium/.idea/libraries/Maven__com_google_auto_auto_common_1_2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjectSelenium/.idea/libraries/Maven__com_google_auto_service_auto_service_1_0_1.xml" afterDir="false" />
@@ -95,6 +99,9 @@
       <change afterPath="$PROJECT_DIR$/../String/String.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../String/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaForBeginners/src/Codewars/Codewars.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaForBeginners/src/Codewars/Codewars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WebTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +133,31 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="TestNG.WebTest.testMenuStartTitle">
+  <component name="RunManager" selected="TestNG.TestCheckTheTitleSubmitNewLanguage.checkTheTitleSubmitNewLanguage">
+    <configuration name="TestCheckTheTitleSubmitNewLanguage.checkTheTitleSubmitNewLanguage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaMavenTestNGWebTests_04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCheckTheTitleSubmitNewLanguage" />
+      <option name="METHOD_NAME" value="checkTheTitleSubmitNewLanguage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTheTitle.testTheTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaMavenTestNGWebTests_04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTheTitle" />
+      <option name="METHOD_NAME" value="testTheTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenTestNGWebTests_04" />
       <option name="PACKAGE_NAME" value="" />
@@ -152,6 +183,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestCheckTheTitleSubmitNewLanguage.checkTheTitleSubmitNewLanguage" />
+        <item itemvalue="TestNG.TestTheTitle.testTheTitle" />
         <item itemvalue="TestNG.WebTest.testMenuStartTitle" />
         <item itemvalue="TestNG.WebTest" />
       </list>

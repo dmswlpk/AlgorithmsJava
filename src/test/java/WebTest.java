@@ -15,7 +15,7 @@ public class WebTest {
         String url = "http://www.99-bottles-of-beer.net/";
         String expectedResult = "Welcome to 99 Bottles of Beer";
 
-        System.setProperty(chromeDriver, "C:/chromeDriver.exe");
+        System.setProperty(chromeDriver, "C://chromeDriver.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);
