@@ -10,7 +10,7 @@ public class TestCase_11_04_ConfirmTheSubtitle0_9 {
     public void testConfirmTheSubtitle0_9()throws InterruptedException{
 
         String chromeDriver = "webdriver.chrome.driver";
-        String driverPath = "/Applications/ChromeDriver/chromedriver";
+        String driverPath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/abc.html";
         String expectedResult = "0-9";
 

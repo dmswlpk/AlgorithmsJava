@@ -12,7 +12,9 @@ public class TestCase_11_06_ConfirmNames {
         String chromeDriver = "webdriver.chrome.driver";
         String driverPath = "/Applications/ChromeDriver/chromedriver";
         String url = "http://www.99-bottles-of-beer.net/";
-        String expectedResult = "Oliver Schade".concat("Gregor Scheithauer".concat("Stefan Scheler"));
+        String expectedResult1 = "Oliver Schade";
+        String expectedResult2 = "Gregor Scheithauer";
+        String expectedResult3 = "Stefan Scheler";
 
         System.setProperty(chromeDriver, "C://chromeDriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -23,13 +25,19 @@ public class TestCase_11_06_ConfirmNames {
         menuTeam.click();
 
         WebElement creatorNames = driver.findElement(
-                By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[Oliver Schade]"));
-        String actualResult = creatorNames.getText();
+                By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[1]"));
+        String actualResult1 = creatorNames.getText();
+        WebElement creatorNames2 = driver.findElement(
+                By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[2]"));
+        String actualResult2 = creatorNames2.getText();
+        WebElement creatorNames3 =driver.findElement(
+                By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[3]"));
+        String actualResult3 = creatorNames3.getText();
 
-        Assert.assertSame(actualResult,expectedResult);
+        Assert.assertSame(actualResult1,expectedResult1);
+        Assert.assertSame(actualResult2,expectedResult2);
+        Assert.assertSame(actualResult3,expectedResult3);
 
         driver.quit();
-
-
     }
 }

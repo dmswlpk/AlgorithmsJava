@@ -4,11 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class TestCase_11_07_04TestAndFillContactInformation {
+public class TestCase_11_07_04TestAndFindJava {
 @Test
-    public void finaJava(){
+    public void findJava(){
         String chromeDrive = "webdriver.chrome.driver";
-        String drivePath = "/Applications/ChromeDriver/chromedriver";
+        String drivePath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/";
         String expectedResult = "java";
 
@@ -22,10 +22,16 @@ public class TestCase_11_07_04TestAndFillContactInformation {
         menuBrowseLanguages.click();
 
         WebElement searchBox = driver.findElement(
-                By.xpath("//body/div[@id='wrap']/div[@id='main']/div[@id='searchlanguages']/p/input[@value_name='search']"));
-        WebElement searchButton = driver.findElement(By.xpath(""));
+                By.xpath("//body/div[@id='wrap']/div[@id='main']/form[@id='searchlanguages']/p/input[@name='search']"));
+        WebElement searchButton = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='main']/form[@id='searchlanguages']/p/input[@name='submitsearch']"));
+        searchBox.sendKeys("Java");
+        searchButton.click();
 
-
-
+     //   WebElement java = driver.findElement(
+     //           By.xpath("body//div[@id='wrap']/div[@id='main']/table[@id='category']/tbody/tr[@onmouseover='setPointer']/td[@bgcolor='#efefef']/a[@href='/language-java-3.html']"));
+     //   java.click();
+//
+        //driver.quit();
     }
 }

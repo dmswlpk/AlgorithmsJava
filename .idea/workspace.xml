@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f279a02a-e0c8-47af-8b4c-02b2ced3e16a" name="Changes" comment="extra changes">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_04_ConfirmTheSubtitle0_9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_06_ConfirmNames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestCheckSubTitleSubmitNewLanguage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/TestCase_11_07_04TestAndFindJava.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase_11_04_ConfirmTheSubtitle0_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_04_ConfirmTheSubtitle0_9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase_11_06_ConfirmNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_06_ConfirmNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase_11_07_04TestAndFindJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_07_04TestAndFindJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCase_11_04_ConfirmTheSubtitle0_9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCase_11_04_ConfirmTheSubtitle0_9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCase_11_06_ConfirmNames.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCase_11_06_ConfirmNames.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="TestNG.WebTest.testMenuStartTitle">
+  <component name="RunManager" selected="TestNG.TestCase_11_07_04TestAndFindJava.findJava">
     <configuration name="TestCase_11_04_ConfirmTheSubtitle0_9.testConfirmTheSubtitle0_9" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenTestNGWebTests_04" />
       <option name="PACKAGE_NAME" value="" />
@@ -65,11 +68,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCheckSubTitleSubmitNewLanguage.checkSubtitleSubmitNewLanguage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase_11_07_04TestAndFindJava" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenTestNGWebTests_04" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCheckSubTitleSubmitNewLanguage" />
-      <option name="METHOD_NAME" value="checkSubtitleSubmitNewLanguage" />
+      <option name="MAIN_CLASS_NAME" value="TestCase_11_07_04TestAndFindJava" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCase_11_07_04TestAndFindJava.finaJava" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaMavenTestNGWebTests_04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCase_11_07_04TestAndFindJava" />
+      <option name="METHOD_NAME" value="finaJava" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -77,23 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCheckTheTitleSubmitNewLanguage.checkTheTitleSubmitNewLanguage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase_11_07_04TestAndFindJava.findJava" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenTestNGWebTests_04" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCheckTheTitleSubmitNewLanguage" />
-      <option name="METHOD_NAME" value="checkTheTitleSubmitNewLanguage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTest.testMenuStartTitle" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JavaMavenTestNGWebTests_04" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WebTest" />
-      <option name="METHOD_NAME" value="testMenuStartTitle" />
+      <option name="MAIN_CLASS_NAME" value="TestCase_11_07_04TestAndFindJava" />
+      <option name="METHOD_NAME" value="findJava" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WebTest.testMenuStartTitle" />
+        <item itemvalue="TestNG.TestCase_11_07_04TestAndFindJava.findJava" />
         <item itemvalue="TestNG.TestCase_11_06_ConfirmNames.confirmNames" />
         <item itemvalue="TestNG.TestCase_11_04_ConfirmTheSubtitle0_9.testConfirmTheSubtitle0_9" />
-        <item itemvalue="TestNG.TestCheckSubTitleSubmitNewLanguage.checkSubtitleSubmitNewLanguage" />
-        <item itemvalue="TestNG.TestCheckTheTitleSubmitNewLanguage.checkTheTitleSubmitNewLanguage" />
+        <item itemvalue="TestNG.TestCase_11_07_04TestAndFindJava" />
+        <item itemvalue="TestNG.TestCase_11_07_04TestAndFindJava.finaJava" />
       </list>
     </recent_temporary>
   </component>
