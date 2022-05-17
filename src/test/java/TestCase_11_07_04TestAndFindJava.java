@@ -28,10 +28,10 @@ public class TestCase_11_07_04TestAndFindJava {
         searchBox.sendKeys("Java");
         searchButton.click();
 
-     //   WebElement java = driver.findElement(
-     //           By.xpath("body//div[@id='wrap']/div[@id='main']/table[@id='category']/tbody/tr[@onmouseover='setPointer']/td[@bgcolor='#efefef']/a[@href='/language-java-3.html']"));
-     //   java.click();
-//
-        //driver.quit();
+        WebElement java = driver.findElement(
+                By.xpath("body//div[@id='wrap']/div[@id='main']/table[@id='category']/tbody/tr[@onmouseover='setPointer']/td[@bgcolor='#efefef']/a[@href='/language-java-3.html']"));
+        java.click();
+
+        driver.quit();
     }
 }
