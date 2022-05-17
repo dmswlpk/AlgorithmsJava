@@ -2,21 +2,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestCase_11_07_04TestAndFindJava {
-@Test
-    public void findJava(){
+    @Test
+    public void findJava() {
         String chromeDrive = "webdriver.chrome.driver";
-        String drivePath = "C://chromeDriver.exe";
+        String driverPath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/";
-        String expectedResult = "java";
+        String expectedResult = "New Search";
 
-        System.setProperty(chromeDrive, "C://chromeDriver.exe");
+        System.setProperty(chromeDrive, driverPath);
         WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+
 
         driver.get(url);
+        driver.manage().window().maximize();
         WebElement menuBrowseLanguages = driver.findElement(
                 By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[@href='/search.html']"));
         menuBrowseLanguages.click();
@@ -28,9 +30,12 @@ public class TestCase_11_07_04TestAndFindJava {
         searchBox.sendKeys("Java");
         searchButton.click();
 
-        WebElement java = driver.findElement(
-                By.xpath("body//div[@id='wrap']/div[@id='main']/table[@id='category']/tbody/tr[@onmouseover='setPointer']/td[@bgcolor='#efefef']/a[@href='/language-java-3.html']"));
-        java.click();
+        WebElement checkTheTitle = driver.findElement(
+                By.xpath("//body/div[@id='navigation']/ul[@id='submenu']/li/a[@href='./']"));
+
+        Boolean actualResult = checkTheTitle.isDisplayed();
+
+        Assert.assertEquals(actualResult,expectedResult);
 
         driver.quit();
     }

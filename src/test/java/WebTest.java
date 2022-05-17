@@ -1,10 +1,10 @@
-import com.sun.jdi.ByteType;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import static java.lang.Thread.sleep;
 
 public class WebTest {
     @Test
@@ -23,7 +23,7 @@ public class WebTest {
                 By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[@href=\"/abc.html\"]"));
 
         menuBrowseLanguages.click();
-        Thread.sleep(2000);
+        sleep(2000);
         WebElement menuStart = driver.findElement(
                 By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[@href='/']"));
 
@@ -31,11 +31,11 @@ public class WebTest {
 
         WebElement h2 = driver.findElement(By.xpath("//body/div[@id='wrap']/div[@id='main']/h2"));
         String actualResult = h2.getText();
-        Thread.sleep(2000);
+        sleep(2000);
 
         Assert.assertEquals(actualResult, expectedResult);
 
-        //sleep(1000);
+        sleep(1000);
 
        driver.quit();
     }

@@ -25,16 +25,18 @@ public class TestCase_11_06_ConfirmNames {
         menuTeam.click();
 
         WebElement creatorNames = driver.findElement(
-                By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[1]"));
-        String actualResult1 = creatorNames.getText();
-        WebElement creatorNames2 = driver.findElement(
-                By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[2]"));
-        String actualResult2 = creatorNames2.getText();
-        WebElement creatorNames3 =driver.findElement(
-                By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[3]"));
-        String actualResult3 = creatorNames3.getText();
+                By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Oliver Schade']"));
 
-        Assert.assertSame(actualResult1,expectedResult1);
+       String actualResult1 = creatorNames.getText();
+
+       WebElement creatorNames2 = driver.findElement(
+               By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Gregor Scheithauer']"));
+       String actualResult2 = creatorNames2.getText();
+       WebElement creatorNames3 =driver.findElement(
+               By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Stefan Scheler']"));
+       String actualResult3 = creatorNames3.getText();
+
+        Assert.assertEquals(actualResult1,expectedResult1);
         Assert.assertSame(actualResult2,expectedResult2);
         Assert.assertSame(actualResult3,expectedResult3);
 
