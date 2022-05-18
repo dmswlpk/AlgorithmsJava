@@ -11,11 +11,11 @@ public class WebTest {
     public void testMenuStartTitle() throws InterruptedException {
 
         String chromeDriver = "webdriver.chrome.driver";
-        String driverPath = "/Applications/ChromeDriver/chromedriver";
+        String driverPath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/";
         String expectedResult = "Welcome to 99 Bottles of Beer";
 
-        System.setProperty(chromeDriver, "C://chromeDriver.exe");
+        System.setProperty(chromeDriver, driverPath);
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);

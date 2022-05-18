@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f279a02a-e0c8-47af-8b4c-02b2ced3e16a" name="Changes" comment="extra changes">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_11_Check_Submit_Language_Error.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCase_11_06_ConfirmNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_06_ConfirmNames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCase_11_07_04TestAndFindJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_07_04TestAndFindJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCheckSubTitleSubmitNewLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_03_CheckSubtitleSubmitNewLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCheckTheTitleSubmitNewLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_02_CheckTheTitleSubmitNewLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestTheTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_1_Check_TheTitle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCase_11_06_ConfirmNames.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCase_11_06_ConfirmNames.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCase_11_07_04TestAndFindJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCase_11_07_04TestAndFindJava.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +44,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="TestNG.TestCase_11_07_04TestAndFindJava.findJava">
-    <configuration name="TestCase_11_04_ConfirmTheSubtitle0_9.testConfirmTheSubtitle0_9" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestCase_11_11_Check_Submit_Language_Error.testCheckSubmitLanguageBTNKError">
+    <configuration name="TestCase_11_03_CheckSubtitleSubmitNewLanguage.checkSubtitleSubmitNewLanguage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenTestNGWebTests_04" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCase_11_04_ConfirmTheSubtitle0_9" />
-      <option name="METHOD_NAME" value="testConfirmTheSubtitle0_9" />
+      <option name="MAIN_CLASS_NAME" value="TestCase_11_03_CheckSubtitleSubmitNewLanguage" />
+      <option name="METHOD_NAME" value="checkSubtitleSubmitNewLanguage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -67,29 +69,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCase_11_07_04TestAndFindJava" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JavaMavenTestNGWebTests_04" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCase_11_07_04TestAndFindJava" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCase_11_07_04TestAndFindJava.finaJava" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JavaMavenTestNGWebTests_04" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCase_11_07_04TestAndFindJava" />
-      <option name="METHOD_NAME" value="finaJava" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestCase_11_07_04TestAndFindJava.findJava" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenTestNGWebTests_04" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,13 +81,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCase_11_11_Check_Submit_Language_Error.testCheckSubmitLanguageBTNKError" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaMavenTestNGWebTests_04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCase_11_11_Check_Submit_Language_Error" />
+      <option name="METHOD_NAME" value="testCheckSubmitLanguageBTNKError" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCase_11_1_Check_TheTitle.testTheTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaMavenTestNGWebTests_04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCase_11_1_Check_TheTitle" />
+      <option name="METHOD_NAME" value="testTheTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestCase_11_07_04TestAndFindJava.findJava" />
+        <item itemvalue="TestNG.TestCase_11_11_Check_Submit_Language_Error.testCheckSubmitLanguageBTNKError" />
         <item itemvalue="TestNG.TestCase_11_06_ConfirmNames.confirmNames" />
-        <item itemvalue="TestNG.TestCase_11_04_ConfirmTheSubtitle0_9.testConfirmTheSubtitle0_9" />
-        <item itemvalue="TestNG.TestCase_11_07_04TestAndFindJava" />
-        <item itemvalue="TestNG.TestCase_11_07_04TestAndFindJava.finaJava" />
+        <item itemvalue="TestNG.TestCase_11_03_CheckSubtitleSubmitNewLanguage.checkSubtitleSubmitNewLanguage" />
+        <item itemvalue="TestNG.TestCase_11_1_Check_TheTitle.testTheTitle" />
+        <item itemvalue="TestNG.TestCase_11_07_04TestAndFindJava.findJava" />
       </list>
     </recent_temporary>
   </component>
@@ -152,5 +155,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="extra changes" />
     <option name="LAST_COMMIT_MESSAGE" value="extra changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/TestCase_11_06_ConfirmNames.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

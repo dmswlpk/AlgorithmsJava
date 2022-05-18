@@ -7,28 +7,28 @@ import org.testng.annotations.Test;
 
 @Test
 
-public class TestCheckSubTitleSubmitNewLanguage {
+public class TestCase_11_03_CheckSubtitleSubmitNewLanguage {
 
     public void checkSubtitleSubmitNewLanguage() throws InterruptedException {
         String chromeDriver = "webdriver.chrome.driver";
         String driverPath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/";
-        String expectedResult = "SUBMIT NEW LANGUAGE";
+        String expectedResult = "Submit new Language";
 
-        System.setProperty(chromeDriver, "C://chromeDriver.exe");
+        System.setProperty(chromeDriver, driverPath);
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);
         WebElement menuSubmitNewLanguage = driver.findElement(
-                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[@href=\"/submitnewlanguage.html\"]"));
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[@href='/submitnewlanguage.html']"));
 
         menuSubmitNewLanguage.click();
 
         WebElement submitNewLanguage = driver.findElement(
-                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li[@class='sel']/a[@href='/submitnewlanguage.html']"));
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[@href='./submitnewlanguage.html']"));
 
         String actualResult = submitNewLanguage.getText();
-        Assert.assertEquals(actualResult, expectedResult);
+        Assert.assertEquals(actualResult.toLowerCase(),expectedResult.toLowerCase());
 
         driver.quit();
     }

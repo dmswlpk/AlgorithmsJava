@@ -5,16 +5,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestTheTitle {
+public class TestCase_11_1_Check_TheTitle {
     @Test
     public void testTheTitle() throws InterruptedException{
 
         String chromeDriver = "webdriver.chrome.driver";
-        String driverPath = "/Applications/ChromeDriver/chromedriver";
+        String driverPath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/";
         String expectedResult = "99 Bottles of Beer";
 
-        System.setProperty(chromeDriver,"C:\\chromedriver.exe");
+        System.setProperty(chromeDriver,driverPath);
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);

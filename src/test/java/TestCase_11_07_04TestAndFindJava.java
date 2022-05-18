@@ -23,17 +23,20 @@ public class TestCase_11_07_04TestAndFindJava {
                 By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[@href='/search.html']"));
         menuBrowseLanguages.click();
 
-        WebElement searchBox = driver.findElement(
-                By.xpath("//body/div[@id='wrap']/div[@id='main']/form[@id='searchlanguages']/p/input[@name='search']"));
         WebElement searchButton = driver.findElement(
-                By.xpath("//body/div[@id='wrap']/div[@id='main']/form[@id='searchlanguages']/p/input[@name='submitsearch']"));
+        By.xpath(
+        "//body/div[@id='wrap']/div[@id='main']/form[@id='searchlanguages']/p/input[contatains(@name,'submitsearch')]"));
+        WebElement searchBox = driver.findElement(
+        By.xpath(
+              "//body/div[@id='wrap']/div[@id='main']/form[@id='searchlanguages']/p/input[contains(@name,'search')]"));
+
         searchBox.sendKeys("Java");
         searchButton.click();
 
-        WebElement checkTheTitle = driver.findElement(
-                By.xpath("//body/div[@id='navigation']/ul[@id='submenu']/li/a[@href='./']"));
+        WebElement findNewSearch = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[@href='./search.html']"));
 
-        Boolean actualResult = checkTheTitle.isDisplayed();
+        String actualResult = findNewSearch.getText();
 
         Assert.assertEquals(actualResult,expectedResult);
 
