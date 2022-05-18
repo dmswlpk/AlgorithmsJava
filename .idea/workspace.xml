@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f279a02a-e0c8-47af-8b4c-02b2ced3e16a" name="Changes" comment="extra changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase_11_11_Check_Submit_Language_Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTests_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCase_11_11_Check_Submit_Language_Error.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase_11_06_ConfirmNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase_11_06_ConfirmNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTests_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTests_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WebTests_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebTests_1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -39,19 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="TestNG.WebTests_1.Test_Case_11_12_Check_Submit_Language_Error">
-    <configuration name="TestCase_11_03_CheckSubtitleSubmitNewLanguage.checkSubtitleSubmitNewLanguage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JavaMavenTestNGWebTests_04" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCase_11_03_CheckSubtitleSubmitNewLanguage" />
-      <option name="METHOD_NAME" value="checkSubtitleSubmitNewLanguage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.WebTests_1.Test_Case_11_14_confirmBrowseLnggsTableContain_1_2">
     <configuration name="TestCase_11_06_ConfirmNames.confirmNames" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenTestNGWebTests_04" />
       <option name="PACKAGE_NAME" value="" />
@@ -64,11 +61,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCase_11_1_Check_TheTitle.testTheTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTests_1.Test_Case_11_12_Check_Submit_Language_Error" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenTestNGWebTests_04" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCase_11_1_Check_TheTitle" />
-      <option name="METHOD_NAME" value="testTheTitle" />
+      <option name="MAIN_CLASS_NAME" value="WebTests_1" />
+      <option name="METHOD_NAME" value="Test_Case_11_12_Check_Submit_Language_Error" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -76,11 +73,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTests_1.Test_Case_11_12_Check_Submit_Language_Error" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTests_1.Test_Case_11_13_confirmTheText" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenTestNGWebTests_04" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WebTests_1" />
-      <option name="METHOD_NAME" value="Test_Case_11_12_Check_Submit_Language_Error" />
+      <option name="METHOD_NAME" value="Test_Case_11_13_confirmTheText" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTests_1.Test_Case_11_14_confirmBrowseLnggsTableContain_1_2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaMavenTestNGWebTests_04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WebTests_1" />
+      <option name="METHOD_NAME" value="Test_Case_11_14_confirmBrowseLnggsTableContain_1_2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -102,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WebTests_1.Test_Case_11_14_confirmBrowseLnggsTableContain_1_2" />
+        <item itemvalue="TestNG.WebTests_1.Test_Case_11_13_confirmTheText" />
         <item itemvalue="TestNG.WebTests_1.Test_Case_11_12_Check_Submit_Language_Error" />
         <item itemvalue="TestNG.WebTests_1.testCheckSubmitLanguageBTNKError" />
         <item itemvalue="TestNG.TestCase_11_06_ConfirmNames.confirmNames" />
-        <item itemvalue="TestNG.TestCase_11_03_CheckSubtitleSubmitNewLanguage.checkSubtitleSubmitNewLanguage" />
-        <item itemvalue="TestNG.TestCase_11_1_Check_TheTitle.testTheTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +167,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/TestCase_11_06_ConfirmNames.java</url>
           <line>17</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/WebTests_1.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

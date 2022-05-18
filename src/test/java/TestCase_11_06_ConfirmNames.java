@@ -38,7 +38,7 @@ public class TestCase_11_06_ConfirmNames {
       String actualResult3 = creatorNames3.getText();
 
       //WebElement names = driver.findElement(
-      //By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Oliver Schade','Gregor Scheithauer','Stefan Scheler'"));
+      //By.xpath("//body/div[@id='wrap']//div[@id='main']/h3/a"));
 
       //String actualResult = names.getText();
 
