@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class TestCase_11_07_04TestAndFindJava {
     @Test
-    public void findJava() {
+    public void TestCase_11_07_04_findJava() {
         String chromeDrive = "webdriver.chrome.driver";
         String driverPath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/";

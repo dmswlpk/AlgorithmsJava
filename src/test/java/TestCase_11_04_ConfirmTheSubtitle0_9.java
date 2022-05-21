@@ -20,7 +20,10 @@ public class TestCase_11_04_ConfirmTheSubtitle0_9 {
         driver.get(url);
 
         WebElement menuSubtitle0_9 = driver.findElement(
-                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[@href='0.html']"));
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[@href='0.html']".trim()));
+
+        //WebElement menuSubtitle0_9 = driver.findElement(
+        //        By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[text()='0-9']"));
         String actualResult = menuSubtitle0_9.getText();
         Thread.sleep(2000);
 

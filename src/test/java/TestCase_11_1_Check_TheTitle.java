@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class TestCase_11_1_Check_TheTitle {
     @Test
-    public void testTheTitle() throws InterruptedException{
+    public void TestCase_11_1_testTheTitle() throws InterruptedException{
 
         String chromeDriver = "webdriver.chrome.driver";
         String driverPath = "C://chromeDriver.exe";

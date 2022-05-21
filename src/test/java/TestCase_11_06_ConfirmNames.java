@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class TestCase_11_06_ConfirmNames {
     @Test
-    public void confirmNames() throws InterruptedException {
+    public void TestCase_11_06_confirmNames() throws InterruptedException {
 
         String chromeDriver = "webdriver.chrome.driver";
         String driverPath = "C://chromeDriver.exe";
@@ -15,9 +15,9 @@ public class TestCase_11_06_ConfirmNames {
         String expectedResult1 = "Oliver Schade";
         String expectedResult2 = "Gregor Scheithauer";
         String expectedResult3 = "Stefan Scheler";
-        //final String expectedResult = "Oliver Schade, Gregor Scheithauer, Stefan Scheler";
+        final String expectedResult = "Oliver Schade, Gregor Scheithauer, Stefan Scheler".trim();
 
-        System.setProperty(chromeDriver,  driverPath);
+        System.setProperty(chromeDriver, driverPath);
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);
@@ -25,28 +25,28 @@ public class TestCase_11_06_ConfirmNames {
                 By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[@href='team.html']"));
         menuTeam.click();
 
-       WebElement creatorNames = driver.findElement(
-               By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Oliver Schade']"));
+       //WebElement creatorNames = driver.findElement(
+       //        By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Oliver Schade']"));
 
-       String actualResult1 = creatorNames.getText();
+       //String actualResult1 = creatorNames.getText();
 
-       WebElement creatorNames2 = driver.findElement(
-               By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Gregor Scheithauer']"));
-      String actualResult2 = creatorNames2.getText();
-      WebElement creatorNames3 =driver.findElement(
-              By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Stefan Scheler']"));
-      String actualResult3 = creatorNames3.getText();
+       //WebElement creatorNames2 = driver.findElement(
+       //        By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Gregor Scheithauer']"));
+       //String actualResult2 = creatorNames2.getText();
+       //WebElement creatorNames3 = driver.findElement(
+       //        By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Stefan Scheler']"));
+       //String actualResult3 = creatorNames3.getText();
 
-      //WebElement names = driver.findElement(
-      //By.xpath("//body/div[@id='wrap']//div[@id='main']/h3/a"));
+        WebElement names = driver.findElement(
+        By.xpath("//body/div[@id='wrap']/div[@id='main']/[.='Oliver Schade,Gregor Scheithauer,Stefan Scheler.']"));
 
-      //String actualResult = names.getText();
+        String actualResult = names.getText();
 
-        Assert.assertEquals(actualResult1,expectedResult1);
-        Assert.assertSame(actualResult2,expectedResult2);
-        Assert.assertSame(actualResult3,expectedResult3);
+       //Assert.assertEquals(actualResult1, expectedResult1);
+       //Assert.assertSame(actualResult2, expectedResult2);
+       //Assert.assertSame(actualResult3, expectedResult3);
 
-      //  Assert.assertEquals(actualResult,expectedResult);
+        Assert.assertEquals(actualResult,expectedResult);
 
         driver.quit();
     }

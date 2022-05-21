@@ -10,6 +10,180 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class WebTests_1 {
+
+    @Test
+    public void TestCase_11_1_testTheTitle() throws InterruptedException {
+
+        String chromeDriver = "webdriver.chrome.driver";
+        String driverPath = "C://chromeDriver.exe";
+        String url = "http://www.99-bottles-of-beer.net/";
+        String expectedResult = "99 Bottles of Beer";
+
+        System.setProperty(chromeDriver, driverPath);
+        WebDriver driver = new ChromeDriver();
+
+        driver.get(url);
+        WebElement rightAngleLogo = driver.findElement(By.xpath("//body/div[@id='wrap']/div[@id='header']/h1"));
+        String actualResult = rightAngleLogo.getText();
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+        driver.quit();
+    }
+
+    @Test
+    public void TestCase_11_02_checkTheTitleSubmitNewLanguage() throws InterruptedException {
+        String chromeDriver = "webdriver.chrome.driver";
+        String driverPath = "C://chromeDriver.exe";
+        String url = "http://www.99-bottles-of-beer.net/";
+        String expectedResult = "Submit new Language";
+
+        System.setProperty(chromeDriver, driverPath);
+        WebDriver driver = new ChromeDriver();
+
+        driver.get(url);
+        WebElement submitNewLanguage = driver.findElement(By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[@href=/submitnewlanguage.html]"));
+        String actualResult = submitNewLanguage.getText();
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+        // driver.quit();
+    }
+
+    @Test
+    public void TestCase_11_03_CheckSubtitleSubmitNewLanguage() throws InterruptedException {
+        String chromeDriver = "webdriver.chrome.driver";
+        String driverPath = "C://chromeDriver.exe";
+        String url = "http://www.99-bottles-of-beer.net/";
+        String expectedResult = "Submit new Language".toLowerCase();
+
+        System.setProperty(chromeDriver, driverPath);
+        WebDriver driver = new ChromeDriver();
+
+        driver.get(url);
+        WebElement menuSubmitNewLanguage = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[@href='/submitnewlanguage.html']"));
+
+        menuSubmitNewLanguage.click();
+
+        WebElement submitNewLanguage = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[@href='./submitnewlanguage.html']"));
+
+        String actualResult = submitNewLanguage.getText().trim().toLowerCase();
+        Assert.assertEquals(actualResult, expectedResult.toLowerCase());
+
+        driver.quit();
+    }
+
+
+    @Test
+    public void TestCase_11_04_ConfirmTheSubtitle0_9() throws InterruptedException {
+
+        String chromeDriver = "webdriver.chrome.driver";
+        String driverPath = "C://chromeDriver.exe";
+        String url = "http://www.99-bottles-of-beer.net/abc.html";
+        String expectedResult = "0-9";
+
+        System.setProperty(chromeDriver, "C://chromeDriver.exe");
+        WebDriver driver = new ChromeDriver();
+
+        driver.get(url);
+
+        WebElement menuSubtitle0_9 = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[@href='0.html']".trim()));
+
+        //WebElement menuSubtitle0_9 = driver.findElement(
+        //        By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[text()='0-9']"));
+        String actualResult = menuSubtitle0_9.getText();
+        Thread.sleep(2000);
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+        //driver.quit();
+    }
+
+    @Test
+    public void TestCase_11_06_confirmNames() throws InterruptedException {
+
+        String chromeDriver = "webdriver.chrome.driver";
+        String driverPath = "C://chromeDriver.exe";
+        String url = "http://www.99-bottles-of-beer.net/";
+        String expectedResult1 = "Oliver Schade";
+        String expectedResult2 = "Gregor Scheithauer";
+        String expectedResult3 = "Stefan Scheler";
+        final String expectedResult = "Oliver Schade, Gregor Scheithauer, Stefan Scheler".trim();
+
+        System.setProperty(chromeDriver, driverPath);
+        WebDriver driver = new ChromeDriver();
+
+        driver.get(url);
+        WebElement menuTeam = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[@href='team.html']"));
+        menuTeam.click();
+
+        //WebElement creatorNames = driver.findElement(
+        //        By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Oliver Schade']"));
+
+        //String actualResult1 = creatorNames.getText();
+
+        //WebElement creatorNames2 = driver.findElement(
+        //        By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Gregor Scheithauer']"));
+        //String actualResult2 = creatorNames2.getText();
+        //WebElement creatorNames3 = driver.findElement(
+        //        By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Stefan Scheler']"));
+        //String actualResult3 = creatorNames3.getText();
+
+        WebElement names = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='main']//[*]"));
+
+        String actualResult = names.getText();
+
+        //Assert.assertEquals(actualResult1, expectedResult1);
+        //Assert.assertSame(actualResult2, expectedResult2);
+        //Assert.assertSame(actualResult3, expectedResult3);
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+        driver.quit();
+    }
+
+    @Test
+    public void TestCase_11_07_04_findJava() {
+        String chromeDrive = "webdriver.chrome.driver";
+        String driverPath = "C://chromeDriver.exe";
+        String url = "http://www.99-bottles-of-beer.net/";
+        String expectedResult = "New Search";
+
+        System.setProperty(chromeDrive, driverPath);
+        WebDriver driver = new ChromeDriver();
+
+
+        driver.get(url);
+        driver.manage().window().maximize();
+        WebElement menuBrowseLanguages = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[@href='/search.html']"));
+        menuBrowseLanguages.click();
+
+        WebElement searchButton = driver.findElement(
+                By.xpath(
+                        "//body/div[@id='wrap']/div[@id='main']/form[@id='searchlanguages']/p/input[contatains(@name,'submitsearch')]"));
+        WebElement searchBox = driver.findElement(
+                By.xpath(
+                        "//body/div[@id='wrap']/div[@id='main']/form[@id='searchlanguages']/p/input[contains(@name,'search')]"));
+
+        searchBox.sendKeys("Java");
+        searchButton.click();
+
+        WebElement findNewSearch = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[@href='./search.html']"));
+
+        String actualResult = findNewSearch.getText();
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+        driver.quit();
+    }
+
     @Test
     public void TestCase_11_11_Check_Submit_Language_Error() throws AWTException {
 
@@ -53,9 +227,9 @@ public class WebTests_1 {
         String chromeDriver = "webdriver.chrome.driver";
         String driverPath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/submitnewlanguage.html";
-        String  expectedResult = "Error: Precondition failed - Incomplete Input.";
+        String expectedResult = "Error: Precondition failed - Incomplete Input.";
 
-        System.setProperty(chromeDriver,driverPath);
+        System.setProperty(chromeDriver, driverPath);
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);
@@ -65,7 +239,7 @@ public class WebTests_1 {
               By.xpath("//body/div[@id='wrap']/div[@id='main']/form[@id='addlanguage']/p/input[@name='submitlanguage']"
                 )
         );
-        Thread.sleep(1000);
+       // Thread.sleep(1000);
 
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_PAGE_DOWN);
@@ -75,13 +249,21 @@ public class WebTests_1 {
 
         WebElement findErrorMsg = driver.findElement(By.xpath("//body/div[@id='wrap']/div[@id='main']/p"));
 
-        String actualResult = findErrorMsg.getText();
-        Assert.assertEquals(actualResult,expectedResult);
+
+
+        WebElement findError = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='main']/p//[contains(text(),'Error']"));
+        String actualResult = findError.getText();
+      /**  /E[contains(concat('
+                ⦿', @A, '⦿'), '⦿w⦿')*/
+
+        Assert.assertEquals(actualResult, expectedResult);
 
         driver.quit();
     }
+
     @Test
-    public void Test_Case_11_13_confirmTheText() throws InterruptedException{
+    public void Test_Case_11_13_confirmTheText() throws InterruptedException {
         String chromeDriver = "webdriver.chrome.driver";
         String driverPath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/submitnewlanguage.html";
@@ -90,7 +272,7 @@ public class WebTests_1 {
                 "language will show up on this page. We don't have the time to mess around with fixing your " +
                 "descriptions etc. Thanks for your understanding.";
 
-        System.setProperty(chromeDriver,driverPath);
+        System.setProperty(chromeDriver, driverPath);
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);
@@ -101,19 +283,19 @@ public class WebTests_1 {
 
         String actualResult = confirmText.getText();
 
-        Assert.assertEquals(actualResult,expectedResult);
+        Assert.assertEquals(actualResult, expectedResult);
 
         driver.quit();
     }
 
     @Test
-    public void Test_Case_11_14_confirmBrowseLnggsTableContain_1_2() throws InterruptedException{
+    public void Test_Case_11_14_confirmBrowseLnggsTableContain_1_2() throws InterruptedException {
         String chromeDriver = "webdriver.chrome.driver";
         String driverPath = "C://chromeDriver.exe";
         String url = "http://www.99-bottles-of-beer.net/";
         String[] expectedResult = {"Language", "Author"};
 
-        System.setProperty(chromeDriver,driverPath);
+        System.setProperty(chromeDriver, driverPath);
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);
@@ -123,21 +305,66 @@ public class WebTests_1 {
         browseLnggs.click();
 
         WebElement table1_Names = driver.findElement(
-        By.xpath("//body/div[@id='wrap']/div[@id='main']/table[@id='category']/tbody/tr/th[text()='Language']"));
+                By.xpath("//body/div[@id='wrap']/div[@id='main']/table[@id='category']/tbody/tr/th[text()='Language']"));
         WebElement table2_Names = driver.findElement(
                 By.xpath("//body/div[@id='wrap']/div[@id='main']/table[@id='category']/tbody/tr/th[text()='Author']"));
 
         String[] actualResult = {table1_Names.getText(), table2_Names.getText()};
 
+        Assert.assertEquals(actualResult, expectedResult);
+
+        driver.quit();
+    }
+
+    @Test
+    public void Test_Case_11_15_confirmMainMenuNoNewComments() throws InterruptedException {
+        String chromeDriver = "webdriver.chrome.driver";
+        String driverPath = "C://chromeDriver.exe";
+        String url = "http://www.99-bottles-of-beer.net/";
+        String expectedResult = "";
+
+        System.setProperty(chromeDriver,driverPath);
+        WebDriver driver = new ChromeDriver();
+        driver.get(url);
+        WebElement topList = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='menu']/li/a[text()='Top Lists']"));
+        topList.click();
+
+        WebElement newComments = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='navigation']/ul[@id='submenu']/li/a[text()='New Comments']"));
+        newComments.click();
+        WebElement isNewCommentsEmpty = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='main']/h2[text()='New Comments']/following-sibling::p[1]"));
+        String actualResult = isNewCommentsEmpty.getText();
+       // if(isNewCommentsEmpty.getText().equals(expectedResult))
         Assert.assertEquals(actualResult,expectedResult);
 
         driver.quit();
     }
 
-    public void Test_Case_11_15_confirmMainMenuNoNewComments() throws InterruptedException {
+    @Test
+    public void Test_Case_11_21_confirmFontOfWarningMsg() throws InterruptedException {
 
+        String chromeDriver = "webdriver.chrome.driver";
+        String driverPath = "C://chromeDriver.exe";
+        String url = "http://www.99-bottles-of-beer.net/submitnewlanguage.html ";
+        String expectedResult = "700rgba(255, 255, 255, 1)";
 
+        System.setProperty(chromeDriver,driverPath);
+        WebDriver driver = new ChromeDriver();
 
+        driver.get(url);
+        WebElement importantMsg = driver.findElement(
+                By.xpath("//body/div[@id='wrap']/div[@id='main']/ul/li/span/b[text()='IMPORTANT:']"));
+
+        importantMsg.isDisplayed();
+
+        String actualResult = importantMsg.getCssValue("font-weight").concat(importantMsg.getCssValue("color"));
+        String actualResult1= importantMsg.getCssValue("font color");
+
+        Assert.assertEquals(actualResult1,expectedResult);
+
+        driver.quit();
     }
 }
 
