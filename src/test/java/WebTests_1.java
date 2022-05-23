@@ -134,11 +134,11 @@ public class WebTests_1 {
                 By.xpath("//body/div[@id='wrap']//div[@id='main']/h3[text()='Stefan Scheler']"));
         String actualResult3 = creatorNames3.getText();
 
-           WebElement[] names = new WebElement[3];
-           for(int i = 0; i < names.length; i++){
-              if(names[i].equals(driver.findElement(
-                       By.xpath("//body/div[@id='wrap']/div[@id='main']/h3"))));
-           }
+        WebElement[] names = new WebElement[3];
+        for (int i = 0; i < names.length; i++) {
+            if (names[i].equals(driver.findElement(
+                    By.xpath("//body/div[@id='wrap']/div[@id='main']/h3")))) ;
+        }
 
 
         //   String actualResult = names.getText();
@@ -232,7 +232,7 @@ public class WebTests_1 {
         String url = "http://www.99-bottles-of-beer.net/submitnewlanguage.html";
         String expectedResult = "Error: Precondition failed - Incomplete Input.";
 
-       // String [] expectedResult = expectedResult.split(" ");
+        // String [] expectedResult = expectedResult.split(" ");
 
         System.setProperty(chromeDriver, driverPath);
         WebDriver driver = new ChromeDriver();
@@ -264,7 +264,7 @@ public class WebTests_1 {
 
         }
 
-       // Assert.assertEquals(actualResult, expectedResult);
+        // Assert.assertEquals(actualResult, expectedResult);
 
         driver.quit();
     }
@@ -369,9 +369,9 @@ public class WebTests_1 {
 
 
         //String actualResult = importantMsg.getCssValue("font-weight").concat(importantMsg.getCssValue("color"));
-    //  /String actualResult1 = bold.getCssValue("font color");
+        //  /String actualResult1 = bold.getCssValue("font color");
 //
-    //   Assert.assertEquals(, expectedResult);
+        //   Assert.assertEquals(, expectedResult);
 
         driver.quit();
     }
